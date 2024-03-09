@@ -1,8 +1,7 @@
-print('hello wrld')
-print('hhg')
-a = 1
-b = 2
-c=3
-d=457
-v = 438
+# Case-study #3
+# Developers: General Popov, Mr Stasuk.
+import local as l
+
+for i in range(0, 12):
+    value = input(f'{l.income} {l.month[i]} {l.currency}')
 
