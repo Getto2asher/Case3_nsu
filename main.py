@@ -7,11 +7,6 @@ from TF_income import TF_income
 
 
 def single(x):
-    sum = income()
-    print(l.sum_income)
-    sum -= TF_income()
-    print(l.sum_TF_income)
-    x = int(x)
     if x < 9076:
         sum_tax = x * 0.1
     if x >= 9076 and x <= 36900:
@@ -23,6 +18,10 @@ def single(x):
 
 # print(l.tax_cat)
 # tax_var = int(input())
+# sum = income()
+# print(l.sum_income, sum)
+# sum -= TF_income()
+# print(l.sum_TF_income, sum)
 # match tax_var:
 #     case 1:
 #         single()
