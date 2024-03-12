@@ -1,4 +1,6 @@
 import local as l
+
+
 def income():
     print(f'{l.text_income}')
     amount = 0
