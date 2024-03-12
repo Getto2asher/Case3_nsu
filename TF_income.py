@@ -1,4 +1,6 @@
 import local as l
+
+
 def TF_income():
     print(f'{l.text_tax_free_income}')
     tax_free_amount = 0
