@@ -45,5 +45,4 @@ def main():
         case _:
             print(l.choice_error)
 
-
-main()
+main() # вызываю основную функцию, чтобы все заработало
