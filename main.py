@@ -80,9 +80,10 @@ def main():
     tax_var = int(input())
     sum = income()
     print(l.sum_income, sum)
-    sum -= TF_income()
+    a = int(TF_income())
+    sum -= a
+    print(l.sum_TF_income, a)
     print(l.sum_t, sum)
-    print(l.sum_TF_income, TF_income())
 
     match tax_var:
         case 1:
