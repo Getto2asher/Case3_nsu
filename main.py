@@ -81,7 +81,7 @@ def main():
     sum = income()
     print(l.sum_income, sum)
     sum -= TF_income()
-    print(l.sum_TF_income, sum)
+    print(l.sum_t, sum)
 
     match tax_var:
         case 1:
