@@ -29,7 +29,7 @@ def single(x):
     print(l.m_sum_tax, sum_tax / 12)
 
 
-def duo(x):  # Аналогично с single(), только границы налогообложения другие.
+def duo(x):
     sum_tax = 0
     if x <= 18150:
         sum_tax = x * 0.1
@@ -76,17 +76,17 @@ def one_parent(x):
 
 
 def main():
-    print(l.tax_cat)  # предлагаю варианты нологооблажения
-    tax_var = int(input())  # прошу выбрать тип налогооблажения
-    sum = income()  # общая сумма. Сначала приравниваю ее к годовому доходу.
-    print(l.sum_income, sum)  # вывожу доход за год
-    sum -= TF_income()  # отнимаю из общей суммы необлагаемые налогом суммы
-    print(l.sum_TF_income, sum)  # вывожу сумму, облагаемую доходом
+    print(l.tax_cat)
+    tax_var = int(input())
+    sum = income()
+    print(l.sum_income, sum)
+    sum -= TF_income()
+    print(l.sum_TF_income, sum)
 
-    match tax_var:  # можно заменить на | if tax_var == 1: \n single(sum) |
+    match tax_var:
         case 1:
             single(
-                sum)  # сумма налога при выборе цифры 1 (субъект). sum в скобках это х в duo(x). От этой суммы считаем налог.
+                sum)
         case 2:
             duo(sum)
         case 3:
