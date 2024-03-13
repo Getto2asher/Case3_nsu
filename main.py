@@ -25,8 +25,8 @@ def single(x):
     elif x >= 406751:
         sum_tax = 9075 * 0.1 + (36900 - 9076) * 0.15 + (89350 - 36901) * 0.25 + (186350 - 89351) * 0.28 + (
                 405100 - 186351) * 0.33 + (406750 - 405101) * 0.35 + (x - 406751) * 0.396
-    print(l.sum_tax, sum_tax)
-    print(l.m_sum_tax, sum_tax / 12)
+    print(l.sum_tax, sum_tax, l.currency)
+    print(l.m_sum_tax, sum_tax / 12, l.currency)
 
 
 def duo(x):
@@ -48,8 +48,8 @@ def duo(x):
     elif x >= 457601:
         sum_tax = 18150 * 0.1 + (73800 - 18151) * 0.15 + (148850 - 73801) * 0.25 + (226850 - 148851) * 0.28 + (
                 405100 - 226851) * 0.33 + (457600 - 405101) * 0.35 + (x - 457601) * 0.396
-    print(l.sum_tax, sum_tax)
-    print(l.m_sum_tax, sum_tax / 12)
+    print(l.sum_tax, sum_tax, l.currency)
+    print(l.m_sum_tax, sum_tax / 12, l.currency)
 
 
 def one_parent(x):
@@ -71,8 +71,8 @@ def one_parent(x):
     elif x >= 432201:
         sum_tax = 12950 * 0.1 + (49400 - 12951) * 0.15 + (127550 - 49401) * 0.25 + (206600 - 127551) * 0.28 + (
                 405100-206601) * 0.33 + (432200 - 405101)*0.35 + (x - 432201) * 0.396
-    print(l.sum_tax, sum_tax)
-    print(l.m_sum_tax, sum_tax / 12)
+    print(l.sum_tax, sum_tax, l.currency)
+    print(l.m_sum_tax, sum_tax / 12, l.currency)
 
 
 def main():
