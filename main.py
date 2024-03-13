@@ -17,7 +17,6 @@ def single(x):
 
 
 def duo(x):
-    x = int(x)
     if x < 18151:
         sum_tax = x * 0.1
     if x >= 18151 and x <= 73800:
@@ -27,21 +26,22 @@ def duo(x):
     print(sum_tax)
 
 
-# def main():
-#     print(l.tax_cat)
-#     tax_var = int(input())
-#     sum = income()
-#     print(l.sum_income, sum)
-#     sum -= TF_income()
-#     print(l.sum_TF_income, sum)
-#     match tax_var:
-#         case 1:
-#             single(sum)
-#         case 2:
-#             duo(sum)
+def main():
+    print(l.tax_cat)
+    tax_var = int(input())
+    sum = income()
+    print(l.sum_income, sum)
+    sum -= TF_income()
+    print(l.sum_TF_income, sum)
+    match tax_var:
+        case 1:
+            single(sum)
+        case 2:
+            duo(sum)
         # case 3:
         #     one_parent()
-        # case _:
-        #     print(l.choice_error)
+        case _:
+            print(l.choice_error)
 
-# main()
+
+main()
