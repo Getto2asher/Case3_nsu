@@ -72,7 +72,7 @@ def one_parent(x):
         sum_tax = 12950 * 0.1 + (49400 - 12951) * 0.15 + (127550 - 49401) * 0.25 + (206600 - 127551) * 0.28 + (
                 405100-206601) * 0.33 + (432200 - 405101)*0.35 + (x - 432201) * 0.396
     print(l.sum_tax, sum_tax)
-    print(l.m_sum_tax)
+    print(l.m_sum_tax, sum_tax / 12)
 
 
 def main():
@@ -85,8 +85,7 @@ def main():
 
     match tax_var:
         case 1:
-            single(
-                sum)
+            single(sum)
         case 2:
             duo(sum)
         case 3:
